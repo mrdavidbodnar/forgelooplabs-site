@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekend Recycler turns failed 3D prints into reusable 1.75 mm filament.">
+  <meta name="theme-color" content="#101816">
+  <title>Weekend Recycler — Give Failed Prints a Second Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Weekend Recycler home">
+        <span class="brand-mark">WR</span>
+        <span>Weekend Recycler</span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#models">Models</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#documents">Documents</a>
+        <a class="nav-cta" href="#contact">Join the project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">A ForgeLoop Labs Inc. project • Edson, Alberta</p>
+          <h1>Your failed prints deserve a second life.</h1>
+          <p class="hero-text">
+            Weekend Recycler is a compact desktop system designed to shred clean 3D-print waste,
+            extrude it into new 1.75 mm filament, cool it and wind it onto a reusable spool.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#models">Explore the recyclers</a>
+            <a class="button button-secondary" href="#prototype">See prototype progress</a>
+          </div>
+          <div class="hero-stats" aria-label="Product highlights">
+            <div><strong>4</strong><span>Integrated modules</span></div>
+            <div><strong>1.75 mm</strong><span>Filament target</span></div>
+            <div><strong>V0</strong><span>Prototype underway</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="image-shell">
+            <img src="assets/standard-recycler.png" alt="Concept rendering of the Weekend Recycler desktop filament recycling machine">
+          </div>
+          <div class="floating-card">
+            <span class="status-dot"></span>
+            Prototype engineering in progress
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="container statement-inner reveal">
+        <p>This is not another box of discarded supports, purge lines and failed prints.</p>
+        <h2>It is tomorrow’s filament.</h2>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">One workflow</p>
+          <h2>From scrap to spool.</h2>
+          <p>The first prototype keeps the controls simple so the mechanics can be tested, measured and improved.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span>01</span>
+            <h3>Shred</h3>
+            <p>Clean failed prints and supports are reduced into small, inspectable flakes.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>02</span>
+            <h3>Extrude</h3>
+            <p>A heated screw extruder melts and meters the material through a replaceable die.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>03</span>
+            <h3>Cool</h3>
+            <p>An adjustable air path stabilizes the strand before it reaches the puller.</p>
+          </article>
+          <article class="process-card reveal">
+            <span>04</span>
+            <h3>Spool</h3>
+            <p>A controlled puller and low-tension spooler collect the new filament.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="models" class="section section-dark">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A product family</p>
+          <h2>Three ways to make recycling visible.</h2>
+        </div>
+
+        <div class="model-grid">
+          <article class="model-card featured reveal">
+            <div class="model-image"><img src="assets/standard-recycler.png" alt="Weekend Recycler standard model concept"></div>
+            <div class="model-content">
+              <p class="model-kicker">The one most people will own</p>
+              <h3>Weekend Recycler</h3>
+              <p class="availability">Planned consumer model</p>
+              <p>A clean, compact consumer appliance with an approachable interface and an enclosed recycling process.</p>
+              <ul>
+                <li>Desktop footprint</li>
+                <li>Shredder, extruder, cooling and spooler</li>
+                <li>Designed for everyday makers</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="model-card reveal">
+            <div class="model-image"><img src="assets/pro-recycler.png" alt="Workshop-oriented filament recycler concept"></div>
+            <div class="model-content">
+              <p class="model-kicker">For workshops and serious makers</p>
+              <h3>Recycler Pro</h3>
+              <p>Rugged, accessible and repairable. Built to make the mechanics visible without turning the machine into a display piece.</p>
+              <ul>
+                <li>Workshop-first construction</li>
+                <li>Visible service areas</li>
+                <li>Practical manual access</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="model-card lab reveal">
+            <div class="model-image"><img src="assets/lab-recycler.png" alt="Lab Recycler Founder's Edition concept with wood, brass and clear panels"></div>
+            <div class="model-content">
+              <p class="model-kicker">500 numbered units maximum</p>
+              <h3>Lab Recycler</h3>
+              <p class="availability">Limited Founder’s Edition</p>
+              <p>Transparent polycarbonate, unique hardwood grain, brass controls, a leather-wrapped handle and an engraved numbered plate.</p>
+              <blockquote>“Engineering can be art. Sustainability can be beautiful.”</blockquote>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototype" class="section">
+      <div class="container prototype-grid">
+        <div class="prototype-copy reveal">
+          <p class="eyebrow">Prototype V0</p>
+          <h2>Built to prove the process before polishing the appliance.</h2>
+          <p>
+            The first build deliberately removes the touchscreen, Wi-Fi, cloud logging and automated diameter correction.
+            It uses manual controls, removable module plates and an open frame so every problem can be seen.
+          </p>
+          <div class="milestones">
+            <div class="milestone done"><span></span><p><strong>Architecture</strong> Four-module system defined</p></div>
+            <div class="milestone done"><span></span><p><strong>Subsystems</strong> Extruder, cooling, puller, spooler and shredder planned</p></div>
+            <div class="milestone done"><span></span><p><strong>Integration</strong> Open-frame engineering mule laid out</p></div>
+            <div class="milestone current"><span></span><p><strong>Procurement</strong> Canadian shopping and quotation list prepared</p></div>
+            <div class="milestone"><span></span><p><strong>Next</strong> Bench-rig fabrication and controlled testing</p></div>
+          </div>
+        </div>
+        <div class="prototype-visual reveal">
+          <img src="assets/technical-recycler.png" alt="Public concept rendering of the Weekend Recycler prototype">
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail-section">
+      <div class="container public-vision reveal">
+        <p class="eyebrow">Development without disclosure</p>
+        <h2>Enough to understand the mission. Not enough to copy the machine.</h2>
+        <p>
+          ForgeLoop Labs Inc. is documenting the prototype carefully while keeping critical dimensions,
+          component selections, supplier lists, costs and fabrication methods outside the public site.
+        </p>
+      </div>
+    </section>
+
+    <section id="documents" class="section docs-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Protected development record</p>
+          <h2>Detailed engineering is shared privately.</h2>
+          <p>
+            Public pages show the product vision and prototype progress. Drawings, bills of materials,
+            supplier information, pricing strategy and fabrication documents are reserved for approved
+            collaborators, advisors and potential partners.
+          </p>
+        </div>
+        <div class="private-access-card reveal">
+          <div>
+            <span class="private-badge">Private engineering room</span>
+            <h3>Request NDA access</h3>
+            <p>
+              Approved visitors receive access to the full prototype archive after confidentiality terms
+              are in place. Access can be revoked at any time.
+            </p>
+          </div>
+          <a class="button button-primary"
+             href="mailto:david.bodnar@forgelooplabs.com?subject=Weekend%20Recycler%20NDA%20Access%20Request">
+             Request access
+          </a>
+        </div>
+        <div class="public-summary-grid">
+          <article class="public-summary-card reveal"><span>01</span><h3>Architecture complete</h3><p>The four-module prototype workflow has been defined.</p></article>
+          <article class="public-summary-card reveal"><span>02</span><h3>Subsystem planning</h3><p>Extrusion, cooling, pulling, winding and shredding have been separated for testing.</p></article>
+          <article class="public-summary-card reveal"><span>03</span><h3>Procurement underway</h3><p>Build stages and supplier categories have been established without publishing sensitive details.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta-section">
+      <div class="container cta-inner reveal">
+        <div>
+          <p class="eyebrow">Follow the build</p>
+          <h2>Follow ForgeLoop Labs as Weekend Recycler moves toward a working prototype.</h2>
+          <p>Contact ForgeLoop Labs Inc. about collaboration, pilot testing, education partnerships or private NDA access.</p>
+        </div>
+        <a class="button button-light" href="mailto:david.bodnar@forgelooplabs.com?subject=Weekend%20Recycler">Contact ForgeLoop Labs</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top"><span class="brand-mark">WR</span><span>Weekend Recycler</span></a>
+        <p>A desktop filament-recovery project by ForgeLoop Labs Inc., based in Edson, Alberta.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Project</p>
+        <a href="#how-it-works">How it works</a>
+        <a href="#models">Models</a>
+        <a href="#prototype">Prototype</a>
+      </div>
+      <div>
+        <p class="footer-heading">Engineering</p>
+        <a href="#documents">Private engineering room</a>
+        <a href="mailto:david.bodnar@forgelooplabs.com?subject=Weekend%20Recycler%20NDA%20Access%20Request">Request NDA access</a>
+      </div>
+    </div>
+    <div class="container legal">
+      <p>© <span id="year"></span> ForgeLoop Labs Inc. Weekend Recycler. Prototype specifications are subject to engineering validation.</p>
+    </div>
+  </footer>
+</body>
+</html>
