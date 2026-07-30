@@ -1,24 +1,31 @@
-# Weekend Recycler — Public Website
+# SEO fix package for forgelooplabs.com
 
-Public marketing site for **ForgeLoop Labs Inc.** and the **Weekend Recycler**.
+## What's in here
 
-This version intentionally excludes:
-- engineering PDFs
-- detailed dimensions and tolerances
-- bills of materials and supplier lists
-- pricing and margin information
-- fabrication details
+- **index.html** — your real homepage, with only the `<head>` section changed:
+  improved title/description, canonical tag, Open Graph tags, Twitter Card tags,
+  and JSON-LD structured data (Organization + all 3 products). Nothing in `<body>`
+  was touched — your markup, nav, sections, and content are untouched.
+- **robots.txt** — new file, tells search engines the site is crawlable and points to the sitemap.
+- **sitemap.xml** — new file, lists your homepage for indexing.
 
-## GitHub Pages
+## How to drop in
 
-Upload the contents of this folder to the root of a GitHub repository, then enable:
+1. Replace your repo's `index.html` with the one here (or diff it against your
+   current version first if you've made other changes since you sent it to me).
+2. Add `robots.txt` and `sitemap.xml` to the repo root (same folder as `index.html`).
+3. Commit and push.
 
-Settings → Pages → Deploy from a branch → main → root
+## Verify after it's live
 
-## Contact
+- `https://forgelooplabs.com/robots.txt` and `/sitemap.xml` load correctly
+- View page source on the homepage — confirm title/meta/OG tags are in `<head>`
+- https://www.opengraph.xyz/ — paste your URL to preview social link previews
+- https://search.google.com/test/rich-results — paste your URL to validate the JSON-LD
 
-david.bodnar@forgelooplabs.com
+## Still outstanding (not a file fix)
 
-## Important
-
-Do not add the private `docs` folder or engineering files to the public repository.
+Single-page site with anchor links (#models, #how-it-works, etc.) means Google
+only indexes one URL. To rank "Weekend Recycler," "Recycler Pro," and "Lab Recycler"
+separately, you'd eventually want real separate pages/routes per model. Say the
+word and I'll sketch out that structure.
