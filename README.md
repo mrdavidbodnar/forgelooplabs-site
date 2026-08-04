@@ -29,3 +29,7 @@ Single-page site with anchor links (#models, #how-it-works, etc.) means Google
 only indexes one URL. To rank "Weekend Recycler," "Recycler Pro," and "Lab Recycler"
 separately, you'd eventually want real separate pages/routes per model. Say the
 word and I'll sketch out that structure.
+
+
+## Multi-page SEO update
+Added indexable About, Weekend Recycler, How It Works, Prototype, and Contact pages; updated canonical metadata, connected organization schema, navigation, and sitemap.

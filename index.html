@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Weekend Recycler turns failed 3D prints into reusable 1.75mm filament. A desktop recycling system from ForgeLoop Labs Inc., Edson, Alberta. See prototype progress and join the project.">
+  <meta name="description" content="ForgeLoop Labs Inc. is an Alberta company developing the Weekend Recycler, a desktop system designed to turn clean failed 3D prints into reusable 1.75 mm filament.">
   <meta name="theme-color" content="#101816">
-  <title>Weekend Recycler | Desktop 3D Print Filament Recycler by ForgeLoop Labs</title>
+  <title>ForgeLoop Labs Inc. | Weekend Recycler for 3D Print Waste</title>
 
   <link rel="canonical" href="https://forgelooplabs.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forgelooplabs.com/">
-  <meta property="og:title" content="Weekend Recycler | Desktop 3D Print Filament Recycler">
-  <meta property="og:description" content="Turn failed 3D prints into reusable 1.75mm filament. A desktop recycling system from ForgeLoop Labs Inc., Edson, Alberta.">
+  <meta property="og:title" content="ForgeLoop Labs Inc. | Weekend Recycler">
+  <meta property="og:description" content="An Alberta company developing a desktop system designed to turn clean failed 3D prints into reusable 1.75 mm filament.">
   <meta property="og:image" content="https://forgelooplabs.com/assets/standard-recycler.png">
   <meta property="og:site_name" content="ForgeLoop Labs">
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Weekend Recycler | Desktop 3D Print Filament Recycler">
+  <meta name="twitter:title" content="ForgeLoop Labs Inc. | Weekend Recycler">
   <meta name="twitter:description" content="Turn failed 3D prints into reusable 1.75mm filament. A desktop recycling system from ForgeLoop Labs Inc.">
   <meta name="twitter:image" content="https://forgelooplabs.com/assets/standard-recycler.png">
 
@@ -29,55 +29,38 @@
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 
-  <!-- JSON-LD: Organization -->
+  <!-- JSON-LD: connected company and website entities -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ForgeLoop Labs Inc.",
-    "url": "https://forgelooplabs.com/",
-    "logo": "https://forgelooplabs.com/assets/standard-recycler.png",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Edson",
-      "addressRegion": "AB",
-      "addressCountry": "CA"
-    }
-  }
-  </script>
-
-  <!-- JSON-LD: Products -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Weekend Recycler",
-    "description": "Planned consumer desktop 3D print filament recycler. Compact appliance with an approachable interface and enclosed recycling process.",
-    "brand": { "@type": "Brand", "name": "ForgeLoop Labs" },
-    "image": "https://forgelooplabs.com/assets/standard-recycler.png",
-    "url": "https://forgelooplabs.com/#models"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Recycler Pro",
-    "description": "Workshop-oriented 3D print filament recycler. Rugged, repairable construction with visible service areas for serious makers.",
-    "brand": { "@type": "Brand", "name": "ForgeLoop Labs" },
-    "image": "https://forgelooplabs.com/assets/pro-recycler.png",
-    "url": "https://forgelooplabs.com/#models"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Lab Recycler",
-    "description": "Limited Founder's Edition 3D print filament recycler. Transparent polycarbonate, hardwood grain, brass controls, leather-wrapped handle, engraved numbered plate. 500 numbered units maximum.",
-    "brand": { "@type": "Brand", "name": "ForgeLoop Labs" },
-    "image": "https://forgelooplabs.com/assets/lab-recycler.png",
-    "url": "https://forgelooplabs.com/#models"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forgelooplabs.com/#organization",
+        "name": "ForgeLoop Labs Inc.",
+        "url": "https://forgelooplabs.com/",
+        "description": "An Alberta product-development company creating desktop recycling technology for 3D-printing waste.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Edson",
+          "addressRegion": "Alberta",
+          "addressCountry": "CA"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "Weekend Recycler"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://forgelooplabs.com/#website",
+        "url": "https://forgelooplabs.com/",
+        "name": "ForgeLoop Labs Inc.",
+        "publisher": {
+          "@id": "https://forgelooplabs.com/#organization"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -86,17 +69,17 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Weekend Recycler home">
+      <a class="brand" href="/" aria-label="ForgeLoop Labs home">
         <span class="brand-mark">WR</span>
         <span>Weekend Recycler</span>
       </a>
       <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
       <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
-        <a href="#how-it-works">How it works</a>
-        <a href="#models">Models</a>
-        <a href="#prototype">Prototype</a>
-        <a href="#documents">Documents</a>
-        <a class="nav-cta" href="#contact">Join the project</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/weekend-recycler/">Weekend Recycler</a>
+        <a href="/prototype/">Prototype</a>
+        <a href="/about/">About</a>
+        <a class="nav-cta" href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
@@ -108,14 +91,15 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow">A ForgeLoop Labs Inc. project • Edson, Alberta</p>
-          <h1>Your failed prints deserve a second life.</h1>
+          <h1>Turn Failed 3D Prints Into New Filament</h1>
+          <p class="hero-tagline">Your failed prints deserve a second life.</p>
           <p class="hero-text">
             Weekend Recycler is a compact desktop system designed to shred clean 3D-print waste,
             extrude it into new 1.75 mm filament, cool it and wind it onto a reusable spool.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#models">Explore the recyclers</a>
-            <a class="button button-secondary" href="#prototype">See prototype progress</a>
+            <a class="button button-primary" href="/weekend-recycler/">Explore Weekend Recycler</a>
+            <a class="button button-secondary" href="/prototype/">See prototype progress</a>
           </div>
           <div class="hero-stats" aria-label="Product highlights">
             <div><strong>4</strong><span>Integrated modules</span></div>
@@ -308,18 +292,18 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="#top"><span class="brand-mark">WR</span><span>Weekend Recycler</span></a>
+        <a class="brand footer-brand" href="/"><span class="brand-mark">WR</span><span>Weekend Recycler</span></a>
         <p>A desktop filament-recovery project by ForgeLoop Labs Inc., based in Edson, Alberta.</p>
       </div>
       <div>
         <p class="footer-heading">Project</p>
-        <a href="#how-it-works">How it works</a>
-        <a href="#models">Models</a>
-        <a href="#prototype">Prototype</a>
+        <a href="/how-it-works/">How it works</a>
+        <a href="/weekend-recycler/">Weekend Recycler</a>
+        <a href="/prototype/">Prototype</a>
       </div>
       <div>
         <p class="footer-heading">Engineering</p>
-        <a href="#documents">Private engineering room</a>
+        <a href="/contact/">Private engineering access</a>
         <a href="mailto:david.bodnar@forgelooplabs.com?subject=Weekend%20Recycler%20NDA%20Access%20Request">Request NDA access</a>
       </div>
     </div>
